@@ -2,15 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Quiz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<img src="wedding.jpg" class="hero-img">
-<h2 id="question">Question here</h2>
-<div id="answers" class="buttons"></div>
-<button onclick="nextQuestion()">Next</button>
+<div class="card" id="quiz-container">
+  <img src="wedding.jpg" class="hero-img">
+
+  <!-- NAME SCREEN -->
+  <div id="start-screen">
+    <h1 class="title">Caleb & Elizabeth 2026 💍</h1>
+    <h2>Enter Your Name</h2>
+    <input type="text" id="username" placeholder="Your name">
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div id="quiz-screen" style="display:none;">
+    <h2 id="question"></h2>
+    <div id="answers" class="buttons"></div>
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+  <p class="footer">Courtesy by Abdulmalik ✨</p>
+
+</div>
 
 <script src="quiz.js"></script>
 </body>

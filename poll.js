@@ -1,10 +1,18 @@
 let votes = [0, 0];
+let hasVoted = false;
 
 function vote(option, btn) {
+  if (hasVoted) return; // stop multiple voting
+
+  hasVoted = true;
   votes[option]++;
 
+  // highlight selected button
   document.querySelectorAll("button").forEach(b => b.classList.remove("selected"));
   btn.classList.add("selected");
+
+  // disable all buttons after voting
+  document.querySelectorAll("button").forEach(b => b.disabled = true);
 
   const total = votes[0] + votes[1];
 

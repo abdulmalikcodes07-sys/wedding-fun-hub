@@ -1,34 +1,48 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  text-align: center;
-  background: #fdf6f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('wedding.jpg') no-repeat center/cover;
+  color: white;
 }
 
-.container {
-  margin-top: 50px;
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  text-align: center;
 }
 
 .hero-img {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 10px;
 }
 
 .buttons {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 15px;
 }
 
 button {
-  padding: 15px 25px;
-  font-size: 18px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
   border: none;
   border-radius: 50px;
-  background: gold;
+   background: gold;
   cursor: pointer;
   transition: 0.3s;
+  font-weight: bold;
 }
 
 button:hover {
@@ -36,11 +50,52 @@ button:hover {
 }
 
 button:active {
-  transform: scale(0.95);
+  transform: scale(0.97);
   opacity: 0.7;
 }
 
 .selected {
   background: gray !important;
-  color: white;
+}
+
+input {
+    width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.leaderboard p {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.gold { color: gold; }
+.silver { color: silver; }
+.bronze { color: #cd7f32; }
+
+#answers {
+  margin-bottom: 20px;
+}
+
+#quiz-screen button:last-of-type {
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: gold;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.8;
 }

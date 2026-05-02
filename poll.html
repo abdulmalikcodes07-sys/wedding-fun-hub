@@ -2,20 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Poll</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<img src="wedding.jpg" class="hero-img">
-<h2>Who is more romantic?</h2>
+<div class="card">
+  <img src="wedding.jpg" class="hero-img">
+  <h2>Who is more romantic?</h2>
 
-<div class="buttons">
-  <button onclick="vote(0, this)">Him</button>
-  <button onclick="vote(1, this)">Her</button>
-</div>
+  <div class="buttons">
+    <button onclick="vote(0, this)">Him</button>
+    <button onclick="vote(1, this)">Her</button>
+  </div>
 
-<div id="result"></div>
+  <div id="result"></div>
+  </div>
 
 <script src="poll.js"></script>
 </body>
