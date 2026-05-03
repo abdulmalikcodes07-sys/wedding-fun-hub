@@ -20,7 +20,7 @@ function vote(option, btn) {
   const percent2 = ((votes[1] / total) * 100).toFixed(1);
 
   document.getElementById("result").innerHTML = `
-    Him: ${percent1}% <br>
-    Her: ${percent2}%
+    Extraordinarily Happy😁💕: ${percent1}% <br>
+    Bursting With Joy🥳🥳: ${percent2}%
   `;
 }

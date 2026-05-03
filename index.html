@@ -19,6 +19,34 @@
   </div>
 </div>
 
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import {
+    getFirestore,
+    collection,
+    addDoc,
+    onSnapshot,
+    query,
+    orderBy
+  } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCDklReMmsUZPe_SbOUCAqrnNSnPUiDSmQ",
+  authDomain: "wedding-quiz-46024.firebaseapp.com",
+  projectId: "wedding-quiz-46024",
+  storageBucket: "wedding-quiz-46024.firebasestorage.app",
+  messagingSenderId: "1027515493168",
+  appId: "1:1027515493168:web:cbadf955549da0c95a36f5",
+};
+
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  window.db = db;
+  window.fb = { collection, addDoc, onSnapshot, query, orderBy };
+</script>
+
 </body>
 </html>
 
