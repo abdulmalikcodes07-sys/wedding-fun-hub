@@ -21,6 +21,6 @@ function vote(option, btn) {
 
   document.getElementById("result").innerHTML = `
     Extraordinarily Happy😁💕: ${percent1}% <br>
-    Bursting With Joy🥳🥳: ${percent2}%
+    Bursting with Excitement🥳🥳: ${percent2}%
   `;
 }
