@@ -26,11 +26,7 @@ An interactive wedding-themed web application built to entertain guests and crea
 
 📂 Project Structure
 
-–index.html
--style.css
--script.js
--firebase-config.js
-└── assets/
+index.html | style.css | script.js | firebase-config.js | assets/
 
 
 
