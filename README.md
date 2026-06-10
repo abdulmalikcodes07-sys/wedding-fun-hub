@@ -26,10 +26,10 @@ An interactive wedding-themed web application built to entertain guests and crea
 
 📂 Project Structure
 
-├── index.html
-├── style.css
-├── script.js
-├── firebase-config.js
+–index.html
+-style.css
+-script.js
+-firebase-config.js
 └── assets/
 
 
@@ -54,7 +54,7 @@ The goal of this project is to create a fun and engaging digital experience for 
 📸 Preview
 
 Live Demo:
-"View Website Here" (YOUR_LIVE_LINK_HERE)
+"View Website Here" https://abdulmalikcodes07-sys.github.io/wedding-fun-hub/
 
 
 
